@@ -1,0 +1,32 @@
+{
+  "storage_version": 1,
+  "name": "quick-action-buttons",
+  "friendly_name": "Quick Action Buttons",
+  "comment": null,
+  "esphome_version": "2023.10.5",
+  "src_version": 1,
+  "address": "192.168.100.97",
+  "web_port": null,
+  "esp_platform": "ESP8266",
+  "build_path": ".esphome/build/quick-action-buttons",
+  "firmware_bin_path": ".esphome/build/quick-action-buttons/.pioenvs/quick-action-buttons/firmware.bin",
+  "loaded_integrations": [
+    "api",
+    "async_tcp",
+    "binary_sensor",
+    "captive_portal",
+    "esp8266",
+    "esphome",
+    "gpio",
+    "logger",
+    "md5",
+    "mdns",
+    "network",
+    "ota",
+    "preferences",
+    "socket",
+    "web_server_base",
+    "wifi"
+  ],
+  "no_mdns": false
+}

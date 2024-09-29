@@ -1,0 +1,6 @@
+esphome/ESPAsyncTCP-esphome@2.0.0
+ESP8266mDNS
+ESP8266WiFi
+DNSServer
+esphome/noise-c@0.1.4
+esphome/ESPAsyncWebServer-esphome@3.2.2

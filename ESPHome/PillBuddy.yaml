@@ -1,0 +1,90 @@
+esphome:
+  name: pillbuddy
+  friendly_name: PillBuddy
+  includes:
+      - arduino_port_expander.h
+
+esp8266:
+  board: d1
+  restore_from_flash: True
+
+preferences:
+  flash_write_interval: 0s
+
+i2c:
+   - id: i2c_component
+
+custom_component:
+  - id: ape
+    lambda: |-
+      auto ape_component = new ArduinoPortExpander(i2c_component, 0x08);
+      return {ape_component};
+
+logger:
+
+api:
+  encryption:
+    key: "pD67Ywb7G+iG3uSMDNa25U/z/SOVfhhWO5orXnIEGTM="
+
+ota:
+  - platform: esphome
+    password: "60039e99813a9bc774fb62ef3b65abb0"
+
+wifi:
+  ssid: "Yug"
+  password: "12345678"
+
+  manual_ip:
+    static_ip: 172.20.10.8
+    gateway: 172.20.10.1
+    subnet: 255.255.255.0
+
+  ap:
+    ssid: "Pillbuddy Fallback Hotspot"
+    password: "BGskCYRhiEt2"
+
+
+captive_portal:
+#
+# output:
+#   - id: dispense_output
+#     platform: gpio
+#     pin: D4
+#
+# switch:
+#   - platform: output
+#     id: dispense
+#     name: "Dispense"
+#     output: dispense_output
+#     restore_mode: RESTORE_DEFAULT_OFF
+
+output:
+- platform: custom
+  type: binary
+  lambda: |-
+    return {ape_binary_output(ape, 4)};
+  outputs:
+    - id: output_dispense
+      inverted: true
+
+switch:
+  - platform: output
+    id: dispense
+    name: Dispense
+    output: output_dispense
+
+binary_sensor:
+  - platform: gpio
+    internal: true
+    pin:
+      number: D5
+      mode:
+        input: true
+        pullup: true
+      inverted: true
+    id: switch_dispense
+    filters:
+      - delayed_on: 10ms
+    on_press:
+      then:
+        - switch.toggle: dispense
