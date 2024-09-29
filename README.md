@@ -1,12 +1,10 @@
-# PillBuddy
-
 ## Inspiration
 
-While brainstorming for our hackathon, we identified a significant issue in the U.S.—the misuse and abuse of prescription medications. Many patients become dependent on certain drugs, and when it's time to stop, they struggle to manage their medication intake, often leading to misuse. Our goal with PillBuddy is to solve this problem by creating a system that ensures patients take their medications responsibly, with the correct dosage, and on time.
+While brainstorming for our hackathon, we identified a significant issue in the U.S.—the misuse and abuse of prescription medications. Many patients become dependent on certain drugs, and when it's time to stop, they struggle to manage their medication intake, often leading to misuse. Our goal with PillBuddy is to solve this problem by creating a system that ensures patients take their medications responsibly, with the correct dosage, and on time. The app not only sends reminders and dispenses the right amount of medication, but also tracks the patient’s medication history, allowing them and their healthcare providers to monitor their intake and stay on track with their treatment.
 
 ## What it does
 
-PillBuddy is an app connected to an automated dispenser that helps users manage their medications. The app stores the user’s medical history and prescription details and sends timely reminders for medication. With the press of a button, the app triggers the dispenser to release the exact dosage needed. It also tracks medication adherence and adjusts future reminders based on the user's habits. Additional features include a chatbot to address basic health concerns and a scheduling tool for doctor appointments, allowing healthcare providers to review the patient’s medication history during checkups.
+PillBuddy is an app connected to an automated dispenser that helps users manage their medications. The app stores the user’s medical history and prescription details and sends timely reminders for medication. With the press of a button, the app triggers the dispenser to release the exact dosage needed. It also tracks medication adherence and adjusts future reminders based on the user's habits. 
 
 ## How we built it
 
