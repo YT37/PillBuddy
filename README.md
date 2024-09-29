@@ -26,3 +26,6 @@ Throughout the project, we learned how to deploy and manage a server to handle r
 
 Next, we plan to integrate machine learning algorithms to personalize medication reminders based on user behavior, enhancing notification effectiveness while improving the chatbot’s ability to address complex health concerns. We will refine the dispenser's design and functionality for real-world use and collaborate with healthcare providers for pilot testing. Additionally, we aim to integrate Pill Buddy with smart home ecosystems like Google Home and Amazon Alexa, while implementing security measures to prevent tampering and misuse of medications.
 
+## Attribution
+Home Assistant - https://www.home-assistant.io/developers/credits/
+ESPHome - https://www.openhomefoundation.org/
