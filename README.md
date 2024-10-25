@@ -28,4 +28,3 @@ Next, we plan to integrate machine learning algorithms to personalize medication
 
 ## Attribution
 Home Assistant - https://www.home-assistant.io/developers/credits/
-ESPHome - https://www.openhomefoundation.org/
